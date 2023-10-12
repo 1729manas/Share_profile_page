@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>share Modal Page</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="card">
+            <div class="primg">
+                <img src="primg.jpeg">
+        </div>
+            <div class="username">
+                <h2>Manas Mishra</h2>
+            </div>
+            <div class="desgn">
+                <h3>Student, Bit Mesra</h3>
+            </div>
+            <div  class="bottom-group">
+                <button onclick="openmodal()" class="btn_share bt-card">
+                <i class="fa-solid fa-share"></i>
+                <div>Share My Profile</div>
+                </button>
+                <button class="follow bt-card">
+                 <div>Follow Me</div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+<!--Modal Html Code-->
+<div class="modal">
+    <div class="modal_header">
+        <h1>Share My Profile</h1>
+        <div>
+            <i  onclick="closemodal()" class="fa-solid fa-xmark close"></i>
+        </div>
+    </div>
+    <div>
+        <h3>Send This Via</h3>
+        <div class="icon-container">
+    <a href="#" class="icon" id="facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+    </a>
+    <a href="#" class="icon" id="twitter">
+        <i class="fa-brands fa-twitter"></i>
+    </a>
+    <a href="#" class="icon" id="instagram">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+    <a href="#" class="icon" id="whatsapp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="#" class="icon" id="telegram">
+        <i class="fa-brands fa-telegram"></i>
+    </a>
+        </div>
+    </div>
+
+</div>
+
+<div  onclick="closemodal()" class="overlay"></div>
+    <script src="https://kit.fontawesome.com/ca1d7b1e87.js" crossorigin="anonymous"></script>
+    <script src="index1.js"></script>
+</body>
+</html>
